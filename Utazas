@@ -1,0 +1,115 @@
+HTML FILE:
+
+
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Világjáró Utazási Iroda</title>
+    <link rel="stylesheet" href="vilagjaro_style.css">
+</head>
+
+<body>
+    <p>A Világjáró Utazási Iroda</p>
+    <div id="repulo">
+        <img src="repulo.gif" alt="Repülő">
+    </div>
+    <h2>akciós ajánlatai:</h2>
+    <p>
+        <a href="http://www.cityofathens.gr/portal/site/AthensPortal/index.html"><img class="kiskep" src="athen.jpg" alt="Athén" title="Athén"></a>
+    <h1>Athén</h1>Athén Görögország, valamint a görög Attika prefektúra fővárosa. A modern Athén hatalmas város, az
+    ókorban városállamként nagy hatalommal bírt. Nevét az ősi görög mitológia városvédő istennőjéről, Pallasz Athéné-ről
+    kapta.
+    <br>
+    <table>
+        <tr>
+            <td class="balra">Egy hét repülővel</td>
+            <td class="jobbra">45 000 Ft/fő</td>
+        </tr>
+        <tr>  
+            <td class="balra">Két hét repülővel</td>
+            <td class="jobbra">80 000 Ft/fő</td>
+        </tr>
+        <tr>
+            <td class="balra">Egy hét autóbusszal</td>
+            <td class="jobbra">35 000 Ft/fő</td>
+        </tr>
+    </table>
+    </p>
+    <p>
+        <a href="http://www.rodos.gr/"><img class="kiskep" src="rodosz.jpg" alt="Rodosz" title="Rodosz"></a>
+    <h1>Rodosz</h1>Rodosz városa Rodosz szigetének északi csücskén helyezkedik el. A több kultúra emlékét hordozó óváros rendkívül jó
+    állapotban maradt fenn. Az ókori város akropolisza a várostól kb. 2 km távolságra található.
+    <br>
+    <table>
+        <tr>
+            <td class="balra">Egy hét repülővel</td>
+            <td class="jobbra">63 000 Ft/fő</td>
+        </tr>
+        <tr>  
+            <td class="balra">Két hét repülővel</td>
+            <td class="jobbra">100 000 Ft/fő</td>
+        </tr>
+        <tr>
+            <td class="balra">Két hét autóbusszal, komppal</td>
+            <td class="jobbra">95 000 Ft/fő</td>
+        </tr>
+    </table>
+    </p>
+    Az árak az illetékeket nem tartalmazzák!
+</body>
+
+</html>
+
+
+
+CSS FILE:
+
+
+body{
+   background-image: url("vilagterkep.jpg");
+   width: 80%;
+   color: #00008B;
+   margin-top: 20pt;
+   margin-bottom: 20pt;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 10pt;
+   padding-right: 10pt;
+   font-family: sans-serif;
+   font-size: 14pt;
+}
+#repulo{
+    text-align:center;
+}
+/*div{
+    text-align:center;
+}*/
+p{
+    font-size: 60pt;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+    font-size: 36pt;
+    text-align: center;
+}
+.kiskep{
+    float:left;
+    width: 250px;
+}
+table, tr, td{
+    background-color: #C4F4FD;
+    border: 0px solid white;
+    border-collapse: collapse;
+    width: 60%;
+}
+.balra{
+    text-align: left;
+}
+.jobbra{
+    text-align: right;
+}
