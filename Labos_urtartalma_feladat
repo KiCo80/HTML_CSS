@@ -1,0 +1,36 @@
+HTML FILE:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lábos térfogata</title>
+    <script src="labos.js"></script>
+</head>
+<body>
+    <form action="">
+        <label for="atmero">A lábos belső átmérője cm-ben:</label>
+        <input type="number" name="ertek" id="atmero">
+        <label for="magassag">A lábos magassága cm-ben:</label>
+        <input type="number" name="ertek" id="magassag">
+        <input type="button" value="Számolj" onclick="szamol()"></input><br>
+        <label for="terfogat">Térfogat(cm3)</label>
+        <input type="number" id="terfogat" disabled>
+        <p>Literben:</p>
+        <p id="liter"></p>
+    </form>
+</body>
+</html>
+
+
+JS FILE:
+
+
+function szamol(){
+    let sugar=document.getElementById('atmero').value*1/2;
+    let magassag=document.getElementById('magassag').value*1;
+    document.getElementById('terfogat').value=Math.round(sugar*sugar*Math.PI*magassag);
+    document.getElementById('liter').innerHTML=sugar*sugar*Math.PI*magassag/1000
+    }
