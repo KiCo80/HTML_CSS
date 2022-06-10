@@ -1,0 +1,55 @@
+HTML FILE:
+
+
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablazat</title>
+    <link rel="stylesheet" href="Tablazat_style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Termék</th>
+            <th>Mértékegység</th>
+            <th>Mennyiség</th>
+        </tr>
+        <tr>
+            <th>Kutyakonzerv</th>
+            <th>kg</th>
+            <th>10</th>
+        </tr>
+        <tr>
+            <th>Száraztáp</th>
+            <th>kg</th>
+            <th>30</th>
+        </tr>
+        <tr>
+            <th>Póráz</th>
+            <th>db</th>
+            <th>2</th>
+        </tr>
+    </table>    
+</body>
+</html>
+
+
+
+
+CSS FILE:
+
+
+table{
+    margin: 0 auto;
+    border: 2px solid red;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid;
+}
+tr:nth-child(even){
+    background-color: red;
+}
