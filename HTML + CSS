@@ -1,0 +1,274 @@
+HTML & CSS
+
+HTML sablon:
+<!DOCTYPE html>
+<html lang=”hu”>
+<head>
+<meta Charset=”utf-8”>
+<title>Fül neve</title>
+<link rel=”stylesheet” href=”style.css”>
+<link rel=”stylesheet” href=”bootstrap.min.css”>	- ha van bootstrap, de nem tartozik a sablonhoz
+<script src=”valami.js></script>
+</head>
+<body>
+</body>
+</html>
+
+Osztályok (Class)
+
+<p class=”osztály neve”>Bekezdés szövege</p>		- a class-t „.” előtaggal formázzuk a css-ben
+								pl: p.osztály neve (.osztály neve, ha egy van) {
+     formázás
+     }
+
+Azonosítók (id)
+
+<div id=”azonosító neve”></div>				- az id-t „#” előtaggal formázzuk a css-ben
+								pl: div#azonosító neve (#azonosító neve, ha egy van){
+								     formázás
+								     }
+
+Általános formázás (CSS-ben)
+
+A weboldalra vonatkozó általános formázás:
+body{
+formázás
+}
+
+Színek:	- betűszín: 	color: red;
+				color: rgb(255,0,0);
+				color: #FF0000;
+				color: #F00;
+
+		- háttérszín: 	background-color: green;
+		
+		- háttérkép:	background-image: url(„kép.jpg”)
+
+		- elhelyezkedés:	background-position: függőleges vízszintes;
+					függőleges lehet: top, center, bottom
+					vízszintes lehet: left, center, right
+	
+- rögzítettség szabályozása:	background-attachment: scroll; - görgetéssel együtt mozog a háttér
+				background-attachment: fixed;  - nem mozdul el a háttér
+
+- háttérkép ismétlődése:	background-repeat: repeat; - opciók:	repeat, repeat-x, repeat-y, no-repeat
+
+Margók:	- margin: 10px 15px 0 25px; - a 0 után nem kell px
+		- margin: 10px auto; - az „auto” középre igazít
+		- margin: 10px;
+		opciók: margin-bottom, margin-left, margin-right, margin-top
+
+Belső margó, kitöltés (padding):	- padding: 10px 15px 0 25px; 
+					- padding: 10px auto; 
+					- padding: 10px;
+					opciók: padding-bottom, padding-left, padding-right, padding-top
+
+Szegélyek:	- border: 2px solid red (szélesség, stílus, szín)
+		- border-width: 2px;
+		- border-style: solid; - opciók: solid, dotted, dashed, double, groove, ridge, inset, outset, hidden, none
+		- border-color: red;
+		- border-radius: 10px; - szegély lekerekítése
+
+Szélesség:	- width: 200px;
+		- width: 70%;
+
+Magasság:	- height: 200px;
+		- height: 70%;
+
+Szövegszintű elemek:
+
+HTML-ben:						CSS-ben:
+
+<b>félkövér</b>					font-weight: bold; - opciók: bold, normal, lighter
+
+<i>dőlt</i>						font-style: italic; - opciók: italic, normal, oblique(ferde)
+
+<u>aláhúzott</u>					text-decoration: underline; - opciók: underline, none, overline, 
+           line trough, blink (villogó), inherit
+
+<strong>erős kiemelés</strong>			-
+
+<sub>alsó index</sub>					-
+
+<sup>felső index</sup>					-
+
+-							font-stretch: normal; - betű szélessége
+							- opciók: normal, wider (szélesebb), narrower (keskenyebb)
+
+-							font-variant: normal; - betű effektusa
+							- opciók: normal, small-caps (kiskapitális), inherit
+
+<span>szöveg</span> - arra szolgál, hogy néhány karaktert vagy szót speciális formázással láthassunk el. A <span> egy soron belüli elem, amely előtt és mögött a böngésző nem hagy ki margót.
+
+Címsorok és bekezdések
+
+Címsor:						CSS-ben:
+
+<h1>Címsor</h1>	- 1-es szintű címsor		Betűtípus: font-family: arial, sans-serif;
+<h2>Címsor</h2>	- 2-es szintű címsor		Betűcsaládok: serif (talpas, sans-serif (talp nélküli), cursive 
+.									  (kézírás jellegű), monospace (írógép hatású), fantasy
+.
+.									
+<h6>Címsor</h6>	- 6-os szintű címsor					
+- alapértelmezésben: balra igazított, félkövér, térköz előtte és utána		      	
+							
+Betűméret: 	font-size: 12pt;
+font-size: 150%;
+									font-size: larger;
+Alapértelmezett betűméret megadása:	font-size-adjust: 12px;
+													font-size-adjust: none;
+
+Szöveg transzormáció:	text-transform: uppercase;	
+- opciók: uppercase (nagybetűs),  
+  lowercase (kisbetűs), capitalize (első 
+  betű nagybetű), none
+Bekezdés:
+
+<p>Bekezdés</p>	- bekezdés
+- alapértelmezésben: balra igazított, térköz előtte és utána
+
+Igazítás: text-align: center;
+- opciók: center, left, right, jistify (sorkizárt)
+							
+							Sorkizárás: text-align-justify: auto;
+								- opciók: auto, inter-word, inter-ideograph, inter-cluster, 
+   distribute, kashida, trim, none
+								
+							Első sor behúzása: text-indent: 40px;
+
+							Betűk közti távolság: letter-spacing: 10px;
+
+
+							Sortávolság: line-height: 20px;
+
+							Szavak közti távolság: word-spacing: 10px;
+
+							Árnyék: text-shadow: 5px 5px 5px #000; (le, jobbra, elmosottság 
+   sugara, szín)
+
+Sortörés:
+
+<br>	- sortörés
+
+Blokk:
+
+<div>…</div>	- blokkba foglal egy részt, több bekezdés vagy kép is lehet benne
+
+Vonal húzása: (a weboldal szélességében)
+
+<hr>	- vonal készítése				Színes vonal: height: 10px;
+									background-color: red;
+
+Listák
+
+HTML-ben:						CSS-ben:
+
+Felsorolás lista: 
+				
+<ul>							Listajel elhelyezkedése: 	list-style-position: inside;		
+<li>Első listaelem</li>							list-style-position: outside;
+	<li>Második listaelem</li>
+	<li>Harmadik listaelem</li>			Listajel: 	kép: list-style-image: url(„kép.jpg”);
+	<li>Negyedik listaelem</li>					egyéb: list-style-type: disc;
+</ul>										- opciók: disc, circle, square, none, decimal, 
+  lower-roman, upper-roman, lower-alpha, 
+  upper-alpha, lower-greek,…
+
+Számozott lista:					Első elem formázása:	ul li:first-child{
+												formázás
+<ol>												}
+	<li>Első listaelem</li>
+	<li>Második listaelem</li>			Utolsó elem formázása: 	ul li:last-child{
+	<li>Harmadik listaelem</li>								formázás
+	<li>Negyedik listaelem</li>								}
+</ol>							
+							3. elem formázása:		ul li:nth-child(3){
+Definíciós lista:										formázás
+												}
+<dl>
+	<dt>Meghatározás				Minden 3. elem formázása:	ul li:nth-child(3n){
+		<dd>Meghatározás kifejtése</dd>						formázás
+		<dd>Meghatározás kifejtése</dd>						}
+	</dt>
+</dl>
+
+Egymásba ágyazott listák:
+
+<ul>
+	<li>…
+		<ul>
+			<li>…</li>
+			<li>…</li>
+		</ul>
+	</li>
+	<li>…</li>
+</ul>
+
+Táblázat
+
+HTML-ben:						CSS-ben:
+
+<table>
+	<caption>Nem kötelező táblázatfelirat</caption>
+	<tr><th>félkövér betűkkel, középre igazított táblázatcím</tr></th>
+	<tr>
+		<td>1/1</td>				Táblázat tulajdonságai:	table{
+		<td>1/2</td>								formázás
+		<td>1/3</td>								}	
+	</tr>
+	<tr>						Sorok tulajdonságai:	table tr{
+		<td>2/1</td>								formázás
+		<td>2/2</td>								}
+		<td>2/3</td>	
+	</tr>						Cellák tulajdonságai:	table tr td{
+</table>										formázás (pl: height)	
+											}
+							
+							- first-child, last-child, nth-child(3), nth-child(3n) ugyanúgy 
+  használható, mint a listáknál
+
+Cellák egyesítése:	- colspan (vízszintesen)
+- rowspan (függőlegesen)
+
+Vízszintesen, pl. 1/1 és 1/2:
+ 
+<table> 
+<tr> 
+<td colspan=”2”>1/1</td> 
+<td>1/3</td> 
+</tr> 
+<tr> 
+<td>2/1</td> 
+<td>2/2</td> 
+<td>2/3</td> 
+</tr> 
+</table> 
+
+Függőlegesen, pl. 1/3 és 2/3:
+
+<table> 
+<tr> 
+<td>1/1</td> 
+<td>1/2</td> 
+<td rowspan=”2”>1/3</td> 
+</tr> 
+<tr> 
+<td>2/1</td> 
+<td>2/2</td> 
+</tr> 
+</table>
+
+Képek
+
+Link
+
+Fejléc
+
+Lábléc
+
+Szakasz
+
+Navigációs elemek (menü)
+
+HTML űrlapok
+ 
