@@ -1,0 +1,108 @@
+HTML FILE:
+
+
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztrációs űrlap</title>
+    <link rel="stylesheet" href="regisztracios_urlap_style.css">
+</head>
+<body>
+    <p><h1>KATEGÓRIÁK</h1></p>
+    <br>
+    <p>Ha már regisztrált tagunk, akkor kérjük jelentkezzen be a <b>bejelentkezési</b> oldalon.</p>
+    <p>Regisztráció típusa</p>
+    <hr>
+    <form id="regisztracio_tipusa">
+        <input type="radio" id="ceg" name="regisztracio_tipusa" value="ceg">
+        <label for="ceg">Cég</label><br>
+        <input type="radio" id="maganszemely" name="regisztracio_tipusa" value="maganszemely">
+        <label for="maganszemely">Magánszemély</label><br>
+    </form>
+    <p>Személyes adatok</p>
+    <hr>
+    <form id="szemelyes_adatok">
+        <label for="vezeteknev">Vezetéknév:</label>
+        <input type="text" id="vezeteknev" name="szemelyes_adatok" value="Vezetéknév"><br>
+        <label for="keresztnev">Keresztnév:</label>
+        <input type="text" id="keresztnev" name="szemelyes_adatok" value="Keresztnév"><br>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="szemelyes_adatok" value="E-mail"><br>
+        <label for="telefonszam">Telefonszám:</label>
+        <input type="tel" id="telefonszam" name="szemelyes_adatok" value="Telefonszám"><br>
+    </form>
+    <p>Jelszó</p>
+    <hr>
+    <form id="jelszo">
+        <label for="jelszo">Jelszó</label>
+        <input type="password" id="jelszo" name="jelszo" value="Jelszó"><br>
+        <label for="jelszo_ujra">Jelszó újra</label>
+        <input type="password" id="jelszo_ujra" name="jelszo" value="Jelszó újra"><br>
+    </form>
+    <p>Hírlevél</p>
+    <hr>
+    <form id="feliratkozas">
+        <input type="radio" id="igen" name="feliratkozas" value="igen">
+        <label for="igen">Igen</label><br>
+        <input type="radio" id="nem" name="feliratkozas" value="nem">
+        <label for="nem">Nem</label><br>
+    </form>
+</body>
+</html>
+
+
+
+CSS FILE:
+
+
+body{
+   background-color: white);
+   width: 80%;
+   color: black;
+   margin-top: 20pt;
+   margin-bottom: 20pt;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 10pt;
+   padding-right: 10pt;
+   font-family: sans-serif;
+   font-size: 14pt;
+}
+#kategoriak{
+    text-align:left;
+}
+#regisztracio_tipusa{
+
+}
+#szemelyes_adatok{
+
+}
+#jelszo{
+
+}
+#feliratkozas{
+    
+}
+/*p{
+    font-size: 60pt;
+    font-weight: bold;
+    text-align: center;
+}*/
+h2{
+    font-size: 36pt;
+    text-align: center;
+}
+.kiskep{
+    float:left;
+    width: 250px;
+}
+.balra{
+    text-align: left;
+}
+.jobbra{
+    text-align: right;
+}
